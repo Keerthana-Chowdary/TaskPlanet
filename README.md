@@ -5,7 +5,7 @@ A full-stack MERN social media application where users can create posts, like, a
 ---
 
 ## 🌐 Live Demo
-(Will be added after deployment)
+https://taskplanet-frontend-three.vercel.app
 
 ---
 
