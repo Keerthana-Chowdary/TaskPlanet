@@ -37,12 +37,7 @@ connectDB();
 // ==============================
 
 // Enable CORS (allow frontend access)
-app.use(
-  cors({
-    origin: process.env.CLIENT_URL || "http://localhost:3000",
-    credentials: true,
-  })
-);
+app.use(cors());
 
 // Parse incoming JSON & form data
 app.use(express.json({ limit: "10mb" }));
