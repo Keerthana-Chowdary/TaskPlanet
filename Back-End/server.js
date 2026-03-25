@@ -37,12 +37,11 @@ connectDB();
 // ==============================
 
 // Enable CORS (allow frontend access)
-app.use(
-  cors({
-    origin: process.env.CLIENT_URL,
-    credentials: true,
-  })
-);
+// FIXED: Removed duplicate 'const cors' declaration here
+app.use(cors({
+  origin: 'https://taskplanet-frontend-three.vercel.app',
+  credentials: true
+}));
 
 // Parse incoming JSON & form data
 app.use(express.json({ limit: "10mb" }));
